@@ -1,4 +1,11 @@
 
 import './styles.css';
+import { findHeroe } from './js/callbacks';
 
-console.log('Hello World on October');
+const heroeId = 'IronMan';
+
+findHeroe( heroeId, ( heroe ) => {
+    
+    console.log( heroe );
+
+});
