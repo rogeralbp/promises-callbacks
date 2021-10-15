@@ -13,14 +13,20 @@ const heroes = {
 
     ironman: {
 
-        name  : 'IronMan',
+        name  : 'Ironman',
         power : 'Money'
     },
 
     spiderman: {
 
-        name  : 'SpiderMan',
+        name  : 'Spiderman',
         power : 'Super Fellings'
+    },
+
+    roger: {
+
+        name  : 'Roger',
+        power : 'Super Engineer'
     },
 };
 
@@ -29,6 +35,14 @@ export const findHeroe = ( id, callback ) => {
 
     const heroe = heroes[id];
 
-    callback( heroe );
+    if ( heroe ){
+
+        callback(  null, heroe );
+
+    } else {
+
+        callback(`Does not exists an Heroe with the id = ${id}`);
+    }
+
     
 };
