@@ -1,5 +1,7 @@
 # Promises Callbacks
 
+This is a standar project using the Promises; studying the advantages, disadvantages 
+
 ## Fundamental Steps
 Once you clone this project you only need to navigate to the folder of this project and there execute the nexts steps by cmd or git bash or vs terminal
 
