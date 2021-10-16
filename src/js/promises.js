@@ -48,3 +48,26 @@ export const findHeroe = ( id ) => {
     } );
 
 };
+
+
+const slowPromise = new Promise( ( resolve, reject ) => {
+
+    setTimeout(() => resolve('Slow Promise') , 2000); // 2 seconds
+
+});
+
+const mediumPromise = new Promise( ( resolve, reject ) => {
+
+    setTimeout(() => resolve('Medium Promise') , 1500);// 1.5 seconds
+
+});
+
+const fastPromise = new Promise( ( resolve, reject ) => {
+
+    setTimeout(() => resolve('Fast Promise') , 1000);// 1 second
+
+});
+
+export { // cool way to export functions, objects, etc
+    slowPromise, mediumPromise, fastPromise
+}
