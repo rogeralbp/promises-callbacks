@@ -50,6 +50,22 @@ export const findHeroe = ( id ) => {
 };
 
 
+// Example of Promise with Async
+export const findHeroeAsync = async( id ) => {
+
+    const heroe = heroes[id];
+
+        if ( heroe ){
+
+            return heroe;
+
+        } else {
+    
+            throw `Does not exists an Heroe with the id = ${id}`;
+        }
+
+};
+
 const slowPromise = new Promise( ( resolve, reject ) => {
 
     setTimeout(() => resolve('Slow Promise') , 2000); // 2 seconds
