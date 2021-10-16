@@ -39,7 +39,7 @@ export const findHeroe = ( id ) => {
 
         if ( heroe ){
 
-            resolve(  heroe );// this happend when everything works fine
+            setTimeout(() => { resolve(  heroe );}, 1000);
     
         } else {
     

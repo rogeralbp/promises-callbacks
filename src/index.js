@@ -1,5 +1,15 @@
 
-import { getHeroesArray } from './js/await';
+import { getHeroesArray, getHeroeAwait } from './js/await';
 
-getHeroesArray().then( console.table );
+console.time('await');
+
+getHeroeAwait('roger')
+
+    .then( heroe => {
+
+        console.log( heroe );
+
+        console.timeEnd('await');
+
+}).catch( console.warn );
 
